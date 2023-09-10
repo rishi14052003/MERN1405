@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>html-task-5</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h2{
+            text-align: center;
+        }
+        table{
+            margin: auto;
+        }
+        td,th{
+        }
+        .input-column input, .input-column select, .input-column textarea, .input-column label{
+            width: 100%;
+        }
+        .label-column{
+            text-align: center;
+            width: 200px;
+        }
+        .text-center{
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: blue; font-size: 40px;">Registration Form</h2>
+    <div class="border">
+        <form action="submit.php" method="post">
+            <table border="1">
+                <tr>
+                    <td class="label-column"><label for="first_name">First Name:</label></td>
+                    <td class="input-column"><input type="text" id="first_name" name="first_name" required></td>
+                </tr>
+                <tr>
+                    <td class="label-column"><label for="last_name">Last Name:</label></td>
+                    <td class="input-column"><input type="text" id="last_name" name="last_name" required></td>
+                </tr>
+                <tr>
+                    <td class="label-column"><label for="email">Email:</label></td>
+                    <td class="input-column"><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td class="label-column"><label for="password">Password:</label></td>
+                    <td class="input-column"><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td class="label-column"><label for="confirm_password">Re-enter Password:</label></td>
+                    <td class="input-column"><input type="password" id="confirm_password" name="confirm_password" required></td>
+                </tr>
+                <tr>
+                    <td class="label-column" rowspan="2">
+                        <label>Gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-column"><label for="age">Age</label></td>
+                    <td class="input-column"><input type="number" id="age"></td>
+                </tr>
+                <tr>
+                    <td class="label-column"><label for="pnumber">Phone Number</label></td>
+                    <td class="input-column"><input type="number" id="pnumber"></td>
+                </tr>
+                <tr>
+                    <td class="label-column"><label for="address">Address</label></td>
+                    <td class="input-column"><textarea name="Address" id="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="label-column"><label for="state">State</label></td>
+                    <td class="input-column"><input type="text" id="state"></td>
+                </tr>
+                <tr>
+                    <td class="label-column"><label for="state">Country</label></td>
+                    <td class="input-column">
+                        <select id="state" name="state">
+                            <option value="AL">Choose your country</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <!-- Add more states here -->
+                          </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="label-column">
+                        <label for="language">Language known</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" id="language1" name="Language" value="English">
+                        <label for="language1">English</label>
+                        <input type="checkbox" id="language2" name="Language" value="Kannada">
+                        <label for="language2">Kannada</label>
+                        <input type="checkbox" id="language3" name="Language" value="Hindi">
+                        <label for="language3">Hindi</label>
+                        <input type="checkbox" id="language4" name="Language" value="Telugu">
+                        <label for="language4">Telugu</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="checkbox" id="declare" name="all" value="all">
+                    <label for="declare">Hereby I declare all the given details are true</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: end;">Log into <a href="">Ethnus</a> website</td>
+                </tr>
+            </table>
+            <div class="text-center">
+            <input type="submit" name="" id="" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

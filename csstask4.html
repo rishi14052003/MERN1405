@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-task4</title>
+    <style>
+        body{
+            margin-top: 20vh;
+        }
+        .border{
+            height: 60vh;
+            margin: auto;
+            max-width: 700px;
+            border: 2px solid black;
+        }
+        .size{
+            margin-top: 10px;
+            width: 40px;
+            height: 40px;
+        }
+        #background-color1{
+            background-color:rgb(11, 178, 123);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        #background-color2{
+            background-color:rgb(0, 132, 255);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        #background-color3{
+            background-color:red;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        #background-color4{
+            background-color:grey;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .navbar{
+            position: absolute;
+            text-align:left;
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+        .navbar h2{
+            padding-bottom: 20px;
+        }
+        #background-color1:hover{
+            width: 50px;
+            height: 50px;
+            transition: all 1s ease-out;
+        }
+        #background-color2:hover{
+            width: 50px;
+            height: 50px;
+            transition: all 1s ease-out;
+        }
+        #background-color3:hover{
+            width: 50px;
+            height: 50px;
+            transition: all 1s ease-out;
+        }
+        #background-color4:hover{
+            width: 50px;
+            height: 50px;
+            transition: all 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+<div class="border">
+    <nav>
+        <div class="navbar">
+            <h2>Hoverable Sidenav buttons</h2>
+            <p>Hover over the buttons in the left side navigation to open them</p>
+        </div>
+    </nav>
+    <div id="background-color1" class="size">
+    </div>
+    <div id="background-color2" class="size">
+    </div>
+    <div id="background-color3" class="size">
+    </div>
+    <div id="background-color4" class="size">
+    </div>
+</div>
+</body>
+</html>
